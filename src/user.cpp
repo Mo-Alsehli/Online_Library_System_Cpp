@@ -93,3 +93,25 @@ void User::display(){
     cout << "EMAIL: " << email << endl;
     cout << "*******************************" << endl;
 }
+
+// Input Stream Operator Overloading
+
+istream &operator>>(istream &input, User &user){
+    cout << "Enter User's Info In This Order: " << endl;
+    cout << "Name " << "Age " << "Email " << "Password " << "(Space Separated)" << endl;
+    input >> user.name >> user.age >> user.email >> user.password;
+    cout << "==================================" << endl;
+    return input;
+}
+
+// Output Stream Operator Overloading.
+ostream &operator <<(ostream &output, const User &user){
+    output << "*******************************" << endl;
+    output << "User ID No. " << user.id << " Info: " << endl;
+    output << "NAME: " << user.name << endl;
+    output << "AGE: " << user.age << endl;
+    output << "EMAIL: " << user.email << endl;
+    output << "*******************************" << endl;
+
+    return output;
+}
