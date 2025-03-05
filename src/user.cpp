@@ -86,12 +86,12 @@ int User::getId() const{
 // Display Function
 
 void User::display(){
-    cout << "*******************************" << endl;
+    cout << "==============================" << endl;
     cout << "User ID No. " << id << " Info: " << endl;
     cout << "NAME: " << name << endl;
     cout << "AGE: " << age << endl;
     cout << "EMAIL: " << email << endl;
-    cout << "*******************************" << endl;
+    cout << "==============================" << endl;
 }
 
 // Input Stream Operator Overloading
@@ -106,12 +106,12 @@ istream &operator>>(istream &input, User &user){
 
 // Output Stream Operator Overloading.
 ostream &operator <<(ostream &output, const User &user){
-    output << "*******************************" << endl;
+    output << "==============================" << endl;
     output << "User ID No. " << user.id << " Info: " << endl;
     output << "NAME: " << user.name << endl;
     output << "AGE: " << user.age << endl;
     output << "EMAIL: " << user.email << endl;
-    output << "*******************************" << endl;
+    output << "==============================" << endl;
 
     return output;
 }

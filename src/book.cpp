@@ -105,14 +105,14 @@ istream& operator>>(istream& input, Book& book){
 
 // Output Stream Operator Overloading.
 ostream &operator <<(ostream &output, const Book &book){
-    output << "*******************************" << endl;
+    output << "==============================" << endl;
     output << "Book ID NO. " << book.id << "INFO: " << endl;
     output << "Title: " << book.title << endl;
     output << "ISBN: " << book.isbn << endl;
     output << "Category: " << book.category << endl;
     output << "Author: " << book.author.getName() << endl; 
     output << "Average Rating: " << book.averageRating << endl;
-    output << "*******************************" << endl;
+    output << "==============================" << endl;
 
     return output;
 }

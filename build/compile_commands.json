@@ -16,5 +16,11 @@
   "command": "C:\\mingw64\\bin\\c++.exe -ID:/Embedded-Systems/projects/C++_Projects/Online_Library_System/Includes -g -std=gnu++20 -o CMakeFiles\\Online_Library_System.dir\\src\\user.cpp.obj -c D:\\Embedded-Systems\\projects\\C++_Projects\\Online_Library_System\\src\\user.cpp",
   "file": "D:\\Embedded-Systems\\projects\\C++_Projects\\Online_Library_System\\src\\user.cpp",
   "output": "CMakeFiles\\Online_Library_System.dir\\src\\user.cpp.obj"
+},
+{
+  "directory": "D:/Embedded-Systems/projects/C++_Projects/Online_Library_System/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -ID:/Embedded-Systems/projects/C++_Projects/Online_Library_System/Includes -g -std=gnu++20 -o CMakeFiles\\Online_Library_System.dir\\src\\userList.cpp.obj -c D:\\Embedded-Systems\\projects\\C++_Projects\\Online_Library_System\\src\\userList.cpp",
+  "file": "D:\\Embedded-Systems\\projects\\C++_Projects\\Online_Library_System\\src\\userList.cpp",
+  "output": "CMakeFiles\\Online_Library_System.dir\\src\\userList.cpp.obj"
 }
 ]
