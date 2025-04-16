@@ -32,7 +32,7 @@ public:
     string getCategory() const;
     void setCategory(string);
     User getAuthor() const;
-    void setAuthor(User&);
+    void setAuthor(const User&);
     void rateBook(double);
     double getAverageRating() const;
     bool operator==(const Book&);

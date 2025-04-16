@@ -63,7 +63,7 @@ string Book::getCategory() const {
     return category;
 }
 
-void Book::setAuthor(User& author) {
+void Book::setAuthor(const User& author) {
     this->author = author;
 }
 
@@ -106,7 +106,7 @@ istream& operator>>(istream& input, Book& book){
 // Output Stream Operator Overloading.
 ostream &operator <<(ostream &output, const Book &book){
     output << "==============================" << endl;
-    output << "Book ID NO. " << book.id << "INFO: " << endl;
+    output << "Book ID NO." << book.id << " INFO: " << endl;
     output << "Title: " << book.title << endl;
     output << "ISBN: " << book.isbn << endl;
     output << "Category: " << book.category << endl;
