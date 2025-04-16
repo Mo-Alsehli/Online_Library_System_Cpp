@@ -1,57 +1,119 @@
-# Online Library System
+# 📚 Online Library System
 
-## Project Overview
+A modern, console-based C++ application to manage books and users using an interactive menu-driven system. Built with modular design and CMake support.
 
-The Online Library System is a C++ project aimed at managing and organizing a library's inventory and user transactions. This system will allow users to search for books, borrow and return them, and manage their accounts.
+---
 
-## Features
+## 🚀 Features
 
-- User authentication and management
-- Book search and catalog management
-- Borrowing and returning books
-- Overdue book tracking and notifications
+### 📖 Book Management
 
-## Installation
+- Add new books
+- Search by **name** or **ID**
+- Update title, author, or category
+- Delete books
+- Rate books
+- View the highest-rated book
+- List all books by a specific user
 
-To install and run the project, follow these steps:
+### 👤 User Management
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/Online_Library_System.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd Online_Library_System
-   ```
-3. Create a build directory and navigate into it:
-   ```sh
-   mkdir build && cd build
-   ```
-4. Run CMake to configure the project:
-   ```sh
-   cmake ..
-   ```
-5. Compile the project:
-   ```sh
-   cmake --build .
-   ```
-6. Run the executable:
-   ```sh
-   ./OnlineLibrarySystem
-   ```
+- Create new users
+- Search by **name** or **ID**
+- View all users
+- Delete users
 
-## Usage
+---
 
-Provide instructions on how to use the system once it is running.
+## 🧱 Project Structure
 
-## Contributing
+```bash
+.
+├── CMakeLists.txt
+├── main.cpp
+├── User.h
+├── User.cpp
+├── Book.h
+├── Book.cpp
+├── UserList.h
+├── UserList.cpp
+├── BookList.h
+├── BookList.cpp
+└── README.md
+```
 
-If you would like to contribute to this project, please fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
+---
 
-## License
+## 🛠️ Build Instructions
 
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+### 🔗 Prerequisites
 
-## Contact
+- C++ Compiler (e.g., `g++`, `clang++`, or MSVC)
+- [CMake ≥ 3.10](https://cmake.org/download/)
 
-For any questions or suggestions, please contact [mohamed.m.alsehli@gmail.com].
+---
+
+### 🧪 Building the Project
+
+#### 📦 Clone the Repository
+
+```bash
+git clone https://github.com/your-username/book-user-manager.git
+cd book-user-manager
+```
+
+#### 🔨 Build with CMake
+
+```bash
+# Create a build directory
+mkdir build && cd build
+
+# Generate build files
+cmake ..
+
+# Compile the project
+cmake --build .
+```
+
+#### ▶️ Run the App
+
+```bash
+./BookUserManager
+```
+
+> Note: On Windows, the executable will be `BookUserManager.exe`.
+
+---
+
+## 📝 Usage
+
+Once the application runs, you'll be greeted with a menu:
+
+```text
+Select one of the following choices:
+1- Books Menu
+2- Users Menu
+3- Exit
+```
+
+Follow the interactive instructions to manage books and users.
+
+---
+
+## 💡 Example Actions
+
+- Add users ➝ Create books ➝ Assign authors
+- Rate books ➝ Search & update entries ➝ Delete as needed
+
+---
+
+## 📌 Notes
+
+- Ensure all header/source files are in the same directory or properly referenced in your CMakeLists.txt.
+- Uses dynamic memory for managing users and books.
+
+---
+
+## 👨‍💻 Author
+
+Created as part of a C++ OOP learning project. Contributions and suggestions welcome!

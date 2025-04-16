@@ -41,7 +41,7 @@ Book* BookList::searchBook(int id){
     return nullptr;
 }
 
-Book BookList::getTheHeighestRatedBook(){
+Book BookList::getTheHighestRatedBook(){
     int heighestRate = -10;
     int index;
     for(int i = 0; i < bCount; i++){

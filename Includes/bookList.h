@@ -18,7 +18,7 @@ public:
     Book *searchBook(int);
     void deleteBook(int);
     friend ostream &operator<<(ostream &, const BookList &);
-    Book getTheHeighestRatedBook();
+    Book getTheHighestRatedBook();
     void getBooksForUser(const User &);
     Book &operator[](int);
     ~BookList();
